@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- la feuille de style css -->
+    <link rel="stylesheet" href="styles.css"> 
+    <!-- la police d'ecriture -->
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Accuille</title>
+    
+</head>
+
+<body>
+    <!-- Page d'accuille -->
+    <section class="header">
+        <!-- Barre de navigation -->
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks"> 
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">ACCUILLE</a></li>
+                    <li><a href="">FORMATIONS</a></li>
+                    <li><a href="">MATERIELS</a></li>
+                    <li><a href="">LOGICIELS</a></li>
+                    <li><a href="">CONTACTER</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <!-- introduction -->
+        <div class="accuille">
+            <h1>BIENVENU DANS NOTRE SITE-WEB</h1>
+            <p>Vel fringilla est ullamcorper eget nulla facilisi etiam. Erat imperdiet sed euismod nisi porta lorem mollis aliquam. Sit amet consectetur adipiscing elit. In arcu cursus euismod quis. Massa vitae tortor condimentum lacinia quis vel eros. Ut porttitor leo a diam sollicitudin tempor id. Risus nullam eget felis eget. Phasellus egestas tellus rutrum tellus pellentesque eu.</p>
+
+        </div>
+
+    </section> 
+    
+    <!-- introduction impression 3d -->
+    <section class="introduction">
+        <h1>INTRODUCTION IMPRESSION 3D </h1>
+        <p>Lobortis scelerisque fermentum Pulvinar elementum integer enim neque volutpat. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Elementum tempus egestas sed sed. Faucibus in ornare quam viverra orci sagittis eu volutpat. Risus feugiat in ante metus dictum at. Tortor id aliquet lectus proin nibh. Accumsan tortor posuere ac ut. Pharetra pharetra massa massa ultricies mi. Pulvinar mattis nunc sed blandit libero volutpat sed cras.</p>
+        <p>Placerat orci nulla pellentesque dignissim enim sit amet venenatis urna. Aliquam purus sit amet luctus. Congue quisque egestas diam in arcu. Amet nisl suscipit adipiscing bibendum est. Commodo odio aenean sed adipiscing diam donec adipiscing tristique risus. Auctor neque vitae tempus quam pellentesque nec nam aliquam sem. Mattis vulputate enim nulla aliquet porttitor. Varius duis at consectetur lorem donec massa sapien faucibus. Augue eget arcu dictum varius duis at consectetur lorem. Id nibh tortor id aliquet lectus proin nibh nisl dui faucibus in ornare quam viverra orci. Tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse. Scelerisque purus semper eget duis at tellus at urna. Fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Nisl suscipit adipiscing bibendum est. Condimentum vitae sapien pellentesque habitant morbi tristique senectus. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Justo nec ultrices dui sapien eget. Massa tempor nec feugiat nisl. Eget sit amet tellus cras.</p>
+    </section>
+
+
+<!-- JavaScript  -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+
+
+
+
+</html>
