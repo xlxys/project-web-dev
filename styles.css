@@ -129,7 +129,7 @@ nav .fa-solid{
 /* ---------- introduction ----------- */
 
 .introduction{
-    width: 90%;
+    width: 100%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
@@ -140,6 +140,8 @@ nav .fa-solid{
 }
 
 .intro{
+    margin: auto;
+    width: 80%;
     border-radius: 25px;
     background: #fff;
     border: 2px solid #000000;
@@ -157,6 +159,7 @@ nav .fa-solid{
 .introduction h1{
     font-size: 36px;
     font-weight: 600;
+    -webkit-text-stroke: 1px #fff;
 }
 
 .introduction p{
@@ -171,6 +174,8 @@ nav .fa-solid{
 /* ------lignes-------------- */
 
 .text-box{
+    margin: auto;
+    width: 80%;
     padding: 40px;
     margin-top: 30px;
     border-radius: 25px;
@@ -199,6 +204,15 @@ nav .fa-solid{
     border-radius: 25px;
 }
 
+.fiche img:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+    -webkit-transition: 0.7s ease-in-out;
+  	-ms-transition: 0.7s ease-in-out;
+  	transition: 0.7s ease-in-out;
+    
+  }
 
 
 
@@ -234,7 +248,7 @@ nav .fa-solid{
 
 
 
-/* CSS */
+/* button efffect */
 .button-more {
   background-color: #4646a7;
   border: 2px solid #4646a7;
@@ -269,3 +283,92 @@ nav .fa-solid{
     padding: 0 25px;
   }
 }
+
+
+
+
+
+
+
+
+  /* scroll effect */
+  .scrolldown {
+    --color: white;
+    --sizeX: 30px;
+    --sizeY: 50px;
+    position: relative;
+    width: var(--sizeX);
+    height: var(--sizeY);
+    border: calc(var(--sizeX) / 10) solid var(--color);
+    border-radius: 50px;
+    box-sizing: border-box;
+    margin: auto;
+  }
+  
+  .scrolldown::before {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: var(--color);
+    border-radius: 100%;
+    animation: scrolldown-anim 2s infinite;
+    box-sizing: border-box;
+    box-shadow: 0px -5px 3px 1px #ffffff66;
+  }
+  
+  @keyframes scrolldown-anim {
+    0% {
+      opacity: 0;
+      height: 6px;
+    }
+    40% {
+      opacity: 1;
+      height: 10px;
+    }
+    80% {
+      transform: translate(0, 20px);
+      height: 10px;
+      opacity: 0;
+    }
+    100% {
+      height: 3px;
+      opacity: 0;
+    }
+  }
+  .chevrons {
+    padding: 6px 0 0 0;
+    margin-left: -3px;
+    margin-top: 48px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .chevrondown {
+    margin-top: -6px;
+    position: relative;
+    border: solid var(--color);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+  }
+  .chevrondown:nth-child(odd) {
+    animation: pulse 500ms ease infinite alternate;
+  }
+  .chevrondown:nth-child(even) {
+    animation: pulse 500ms ease infinite alternate 250ms;
+  }
+  @keyframes pulse {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.5;
+    }
+  }
