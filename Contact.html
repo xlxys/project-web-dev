@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- la feuille de style css -->
+    <link rel="stylesheet" href="styles.css"> 
+    <!-- la police d'ecriture -->
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CONTACTER</title>
+    
+</head>
+<body>
+    <section class="Cont-header">
+        <!-- Barre de navigation -->
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="image de logo"></a>
+            <div class="nav-links" id="navLinks"> 
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ACCUILLE</a></li>
+                    <li><a href="formations.html">FORMATIONS</a></li>
+                    <li><a href="Materiel.html">MATERIELS</a></li>
+                    <li><a href="logiciels.html">LOGICIELS</a></li>
+                    <li><a href="Contact.html">CONTACTER</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contactez Nous</h1>
+    </section>
+
+    <!--   Contactez Nous   -->
+<section class="intro-contact">
+    <Section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.468221180948!2d3.179533515287372!3d36.71131467996692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x787a0b4fa45e227a!2sUniversit%C3%A9%20des%20Sciences%20et%20de%20la%20Technologie%20Houari%20Boumediene!5e0!3m2!1sfr!2sdz!4v1649418164827!5m2!1sfr!2sdz"
+         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </Section>
+
+
+    <Section class="Contactez-Nous">
+        <div class="row">
+            <div class="contact_col">
+                <form action="GET">
+                    <input type="text" placeholder="Entrez votre nom">
+                    <input type="text" placeholder="Entrez votre address e-mail">
+                    <input type="text" placeholder="Entrez votre sujet">
+                    <textarea  rows="8" placeholder="message" required></textarea>
+                    <br>
+                    <button type="submit" class="button-more">Envoyer le message</button>
+                </form>
+            </div>
+            <div class="contact_col">
+                <div>
+                    <i class="fa fa-home"></i>
+                        <h5>Bab Ezzouar, Alger</h5>
+                
+                </div> 
+                <div>
+                    <i class="fa fa-phone"></i>
+                        <h5>+213 76598421</h5>
+                </div> 
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                        <h5>UnivBabZouar@USTHB.DZ</h5>
+                </div> 
+            </div>
+        </div>
+
+    </Section>
+</section>
+
+     <!-- footer de la page -->
+     <section class="footer">
+        <h4>A propos </h4>
+        <p>Ce site internet creé par trois etudiants de l'USTHB dans le but de presenter le monde de l'impression 3d qui est en tendance dans touts les domaines</p>
+
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+
+        </div>
+        <p> made with <i class="fa fa-heart-o"></i> by  </p>
+    </section>
+
+    <!-- JavaScript pour navBar responsive  -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

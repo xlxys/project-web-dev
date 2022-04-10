@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,11 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-
+    <!-- icons du footer -->
     <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
 
     <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <title>Accuille</title>
     
 </head>
@@ -25,23 +26,29 @@
     <section class="header">
         <!-- Barre de navigation -->
         <nav>
-            <a href="index.html"><img src="images/logo.png"></a>
+            <a href="index.html"><img src="images/logo.png" alt="logo de la page"></a>
             <div class="nav-links" id="navLinks"> 
-                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>    <!-- navbar responsive -->
                 <ul>
-                    <li><a href="">ACCUILLE</a></li>
-                    <li><a href="">FORMATIONS</a></li>
-                    <li><a href="">MATERIELS</a></li>
-                    <li><a href="">LOGICIELS</a></li>
-                    <li><a href="">CONTACTER</a></li>
+                    <li><a href="index.html">ACCUILLE</a></li>
+                    <li><a href="formations.html">FORMATIONS</a></li>
+                    <li><a href="Materiel.html">MATERIELS</a></li>
+                    <li><a href="logiciels.html">LOGICIELS</a></li>
+                    <li><a href="Contact.html">CONTACTER</a></li>
                 </ul>
             </div>
-            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>   <!-- navbar responsive -->
         </nav>
         <!-- introduction -->
         <div class="accuille">
-            <h1>BIENVENU DANS NOTRE SITE-WEB</h1>
-            <p>Vel fringilla est ullamcorper eget nulla facilisi etiam. Erat imperdiet sed euismod nisi porta lorem mollis aliquam. Sit amet consectetur adipiscing elit. In arcu cursus euismod quis. Massa vitae tortor condimentum lacinia quis vel eros. Ut porttitor leo a diam sollicitudin tempor id. Risus nullam eget felis eget. Phasellus egestas tellus rutrum tellus pellentesque eu.</p>
+            <h1>BIENVENU DANS LE MONDE DE <br> L'IMPRESION 3D</h1>
+    
+             
+            <p>L'impression 3d est une innovation qui est entrain de revolutionner le monde,
+                et de plus en plus de personnes s'interressent a cette derniere. <br>
+                Dans notre site vous allez decouvrir tous ce que vous avez besoin pour debuter dans ce vaste domaine.
+            </p>
+            <!-- scroll effect -->
         <div class='scrolldown'>
             <div class="chevrons">
               <div class='chevrondown'></div>
@@ -51,7 +58,7 @@
         </div>
         
 
-    </section> 
+   </section>  
     
     <!-- introduction impression 3d -->
     <section class="introduction">
@@ -61,24 +68,23 @@
             <h1>Qu’est-ce que l’impression 3D ?</h1>
         
             <p>L’impression 3D, communément appelée dans le milieu professionnel « fabrication additive », est un processus de fabrication d’objets tridimensionnels par ajout de matières. Similaire dans le principe à une imprimante qui imprime sur papier, l’impression 3D imprime la pièce en volume, tout ceci en superposant des couches de matières jusqu’à l’obtention de l’objet final.</p>
-            <p>C’est une <b>innovation</b> qui ouvre de nouvelles perspectives pour l’impression car elle permet la création de pièces à partir de matières, telles que des poudres ou des résines. Elle rend aussi accessible cette création au plus grand nombre grâce à la mise au point de nombreuses technologies d’impression 3D. Certaines technologies sont adaptées pour les particuliers, d’autres sont réservées à une utilisation professionnelle.</p>
+            <p>C’est une innovation qui ouvre de nouvelles perspectives pour l’impression car elle permet la création de pièces à partir de matières, telles que des poudres ou des résines. Elle rend aussi accessible cette création au plus grand nombre grâce à la mise au point de nombreuses technologies d’impression 3D. Certaines technologies sont adaptées pour les particuliers, d’autres sont réservées à une utilisation professionnelle.</p>
             
-
+            <img src="images/3d-printing-illustration.png" alt="illustration d'impression 3d">
             <h1>Comment fonctionne l'impression 3D ?</h1>
 
             <p>L’impression 3D permet de réaliser en 3 dimensions tous les objets que vous souhaitez, presque aussi simplement que vous imprimez en « 2D » sur votre imprimante papier de bureau… Vous fournissez le fichier à imprimer (un modèle 3D téléchargé, ou de votre création), vous effectuez quelques réglages, et vous lancez l’impression !</p>
             </div>
-            <img src="images/3d-printing-illustration.png">
         </div>
-
+        <!-- applications d'impression -->
         <div class="text-box">
-
+            
             <h1>Applications d'impression 3D</h1>
             
-
+            <!-- partie Industrie -->
             <div class="fiche">       
-                <img src="images/3d-jet.jpg">
-
+                <a href="Industrie.html"> <img src="images/3d-jet.jpg" alt="image de moteur de jet en 3d"> </a>
+                
                 <div class="text">
                     <h3>L’Industrie</h3>
                     <p>
@@ -86,10 +92,11 @@
                         Ce nouveau procédé de fabrication additive se positionne comme un outil précieux dans les phases de développement d’un projet. 
                         Que ce soit pour les phases d’innovation et/ou de conception, une imprimante 3D industrielle ...
                     </p>                    
-                    <a class="button-more" href="">Lire la suite</a>
+                    <a class="button-more" href="Industrie.html">Lire la suite</a>
                 </div>
             </div>
 
+            <!-- partie Medecine -->
             <div class="fiche"> 
                 <div class="text">    
                     <h3>Médecine</h3>
@@ -97,14 +104,15 @@
                         L'impression 3D s'impose comme une révolution permettant aux médecins de se recentrer davantage sur le patient en laissant les
                         problématiques de production d'outils à des machines précises et autonomes, plutôt que d'avoir recours à un laborieux modelage manuel des moules par exemple ...
                     </p>                    
-                    <a class="button-more" href="">Lire la suite</a>
+                    <a class="button-more" href="Medecine.html">Lire la suite</a>
                 </div>
 
-                <img src="images/3d-skull.jpg">
+                <a href="Medecine.html"> <img src="images/3d-skull.jpg" alt="image de crane en 3d"> </a>
             </div>
 
+            <!-- partie Architecture -->
             <div class="fiche">    
-                <img src="images/3d-architecture.jpg">
+                <a href="Architecture.html"> <img src="images/3d-architecture.jpg" alt="image de maquette"> </a>
 
                 <div class="text"> 
                     <h3>L’Architecture</h3>
@@ -112,10 +120,10 @@
                         Que ce soit l'architecture, l'architecture d'intérieur ou le secteur du bâtiment en général, ces métiers ont bien compris depuis 
                         longtemps l'apport considérable que peut avoir l'impression 3D dans leur démarche commerciale et organisationnelle ...
                     </p>                    
-                    <a class="button-more" href="">Lire la suite</a>
+                    <a class="button-more" href="Architecture.html">Lire la suite</a>
                 </div>
             </div>    
-            
+            <!-- partie Automobile -->
             <div class="fiche">    
                 <div class="text">
                     <h3>L’automobile</h3>
@@ -124,11 +132,62 @@
                         et elle l’est toujours. Mais nous voyons que cette technologie commence à être utilisée pour la fabrication de voitures. Car il est maintenant possible de créer
                         des voitures grâce à l’impression 3D. C’est le résultat ...
                     </p>                    
-                    <a class="button-more" href="">Lire la suite</a>
+                    <a class="button-more" href="Automobile.html">Lire la suite</a>
                 </div>
 
-                <img src="images/3d-sculpture.jpg">
+                <a href="Automobile.html"> <img src="images/3d-sculpture.jpg" alt="vouiture imprime en 3d"> </a>
             </div>
+        </div>
+        
+        <div class="titre-links">
+            <h1>Autres Liens Utiles</h1>   
+        </div>
+
+        <!-- liens utile -->
+        <div class="links">
+            <!-- formation -->
+            <a href="formations.html">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/formation.png" alt="illustration de formation">
+                </div>
+                <div class="details">
+                    <h2>FORMATIONS</h2>
+                    <p>Apprenez le workflow, les technologies de la fabrication additive, les différents matériaux avec les formations de tous genre dédiés
+                        et utilisez les logiciels de conception 3D adaptés dans cette article nous vous proposons différents formation payante, gratuit,
+                        en ligne ou en centre de formation pour vous aider a vous lancer ou ameliore vos competences.</p>
+                </div>
+            </div>
+            </a>
+
+            <!-- materiel -->
+            <a href="Materiel.html">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/materiel.jpg" alt="illustration de fillaments">
+                </div>
+                <div class="details">
+                    <h2>MATERIELS</h2>
+                    <p> Lorsque vous avez des doutes lors de l'achat, il n'y a rien de mieux que de connaître les caractéristiques 
+                        les plus importantes et quel type d'imprimante est le meilleur pour chaque cas. 
+                        Et c'est exactement ce que nous vous montrons dans ce guide : comment choisir une imprimante 3d et comment choisir le filament.</p>
+                </div>
+            </div>
+            </a>
+            <!-- logiciel -->
+            <a href="logiciels.html">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/software.png" alt="illustration pour logiciel">
+                </div>
+                <div class="details">
+                    <h2>LOGICIELS</h2>
+                    <p>Vous cherchez un logiciel pour imprimante 3D ? 
+                        Découvrez dans notre article les meilleurs logiciels de modelisation 3D  !</p>
+                </div>
+            </div>
+            </a>
+
         </div>
     </section>
 
@@ -137,10 +196,8 @@
     <!-- footer de la page -->
     <section class="footer">
         <h4>A propos </h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Facilis numquam qui eligendi veniam, 
-            deserunt quisquam id ratione mollitia hic voluptatibus. Saepe eveniet libero modi ullam laborum
-             quibusdam, commodi doloribus placeat.</p>
-
+        <p>Ce site internet creé par trois etudiants de l'USTHB dans le but de presenter le monde de l'impression 3d qui est en tendance dans touts les domaines</p>
+        <!-- icons du footer -->
         <div class="icons">
             <i class="fa fa-facebook"></i>
             <i class="fa fa-twitter"></i>
@@ -148,12 +205,25 @@
             <i class="fa fa-linkedin"></i>
 
         </div>
-        <p> made with <i class="fa fa-heart-o"></i> by  </p>
+        <p> made with <i class="fa fa-heart-o"></i> by </p>
     </section>
     
 
 
-<!-- JavaScript  -->
+<!-- JavaScript pour navBar responsive  -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+<!-- JavaScript pour navBar responsive  -->
 <script>
     var navLinks = document.getElementById("navLinks");
 
